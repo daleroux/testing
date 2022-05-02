@@ -1,6 +1,6 @@
 ---
 - name: create user accounts for all our servers
-  hosts: servers
+  hosts: all
   remote_user: ansible
   become: true
 
