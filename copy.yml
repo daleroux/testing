@@ -12,3 +12,8 @@
         dest: /etc/sudoers.dleroux
         remote_src: yes
         validate: /usr/sbin/visudo -csf %s
+
+    - name: copy ansible facts to a file
+      ansible.builtin.copy:
+        content: "{{ ansible_facts }}"
+        dest: /tmp/ansible_facts_details.json
