@@ -6,7 +6,7 @@
 
 
   tasks:
-    - name: test the copy module
+    - name: test the copy module with /etc/sudoers
       ansible.builtin.copy:
         src: /etc/sudoers
         dest: /etc/sudoers.dleroux
